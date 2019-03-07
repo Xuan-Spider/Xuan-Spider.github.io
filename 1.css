@@ -280,3 +280,10 @@ div#gpa {
     box-shadow: 0px 6px 14px 2px #524f4f;
 }
 
+@media screen and (max-width: 600px) {
+ 	.arow-top {
+ 		bottom : 10px;
+ 		right : 10px;
+ 	}
+}
+
