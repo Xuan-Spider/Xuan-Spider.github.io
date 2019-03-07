@@ -255,8 +255,28 @@ div#gpa {
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-	color: 	rgb(76, 150, 215);
+	color: #06fff7 !important;
+	background: #000000;
+	border-radius: 5px;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-	color: rgb(76, 150, 215);
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: white;}
+
+.arow-top {
+    width: 50px;
+    height: 50px;
+    background: #040404;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 300ms all;
+    box-shadow: 0px 6px 14px 2px #524f4f;
 }
+

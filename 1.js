@@ -1,14 +1,27 @@
-﻿ $(function(){
- 	console.log('a');
-	$('.bl1').removeClass('active');
+﻿ 
+ $( document ).ready(function() {
  	$(window).scroll(function() {
  		//lay vi tri hien tai 
  		locationNow = $('html, body').scrollTop();
- 		if(locationNow > 350) {
+ 		if(locationNow > $('.intro.hello').offset().top) {
  			$('.top-menu.fixed-top').addClass('changecolor')
  		} else {
  			$('.top-menu.fixed-top').removeClass('changecolor')
  		}
+
+ 		if(locationNow > $('.intro.hello').offset().top) {
+ 			$('#up-top').addClass('arow-top');
+ 		} else {
+ 			$('#up-top').removeClass('arow-top');
+ 		}
+
+ 	})
+
+
+
+ 	$('#up-top').click(function() {
+ 		$("html, body").animate({ scrollTop: $('#home-page').offset().top }, 600);
+    	return false;
  	})
 
  	//Ham click to scroll block 
@@ -39,6 +52,5 @@
 	  transition: 'all ease-in-out .3s',
 	  offsettop : 100
 });
-
-})  
+});
  
