@@ -24,7 +24,7 @@ body {
 	font-size: 22px;
 }
 .top-menu.fixed-top.changecolor {
-    background: rgba(41, 41, 41, 0.84);
+    background: rgba(41, 41, 41, 0.92);
 }
 .container nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 	background: rgba(58, 58, 58, 0.01) !important;
@@ -280,10 +280,17 @@ div#gpa {
     box-shadow: 0px 6px 14px 2px #524f4f;
 }
 
+.navbar-light .navbar-toggler {
+	background : white;
+	outline : none;
+}
 @media screen and (max-width: 600px) {
  	.arow-top {
  		bottom : 10px;
  		right : 10px;
+ 	}
+ 	.top-menu {
+ 		background : rgba(41, 41, 41, 0.92);
  	}
 }
 
