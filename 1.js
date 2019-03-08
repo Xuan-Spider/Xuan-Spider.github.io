@@ -1,5 +1,11 @@
 ﻿ 
  $( document ).ready(function() {
+ 	if(locationNow > $('.intro.hello').offset().top) {
+ 			$('.top-menu.fixed-top').addClass('changecolor')
+ 		} else {
+ 			$('.top-menu.fixed-top').removeClass('changecolor')
+ 		}
+ 		
  	$(window).scroll(function() {
  		//lay vi tri hien tai 
  		locationNow = $('html, body').scrollTop();
