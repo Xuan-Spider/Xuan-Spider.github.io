@@ -4,6 +4,12 @@
  	$(window).scroll(function() {
  		//lay vi tri hien tai 
  		locationNow = $('html, body').scrollTop();
+ 		if(locationNow > $('#my-portfolio').offset().top-300) {
+ 			$('.wrap-portfolio').addClass('active')
+ 		} else {
+ 			$('.wrap-portfolio').removeClass('active')
+ 		}
+
  		if(locationNow > $('.intro.hello').offset().top) {
  			$('.top-menu.fixed-top').addClass('changecolor')
  		} else {

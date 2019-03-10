@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 	<link rel="stylesheet" href="1.css">
 </head>
 
@@ -96,12 +96,12 @@
 					<div class="col-md-6 col-sm-6 col-xs-12 left-about" style="text-align: center;">
 						<img src="imgs/avatar.jpg" alt="">
 						<div class="about-me">
-							<div class="fullname">Full Name : Phùng Đình Xuân</div>
+							<div class="fullname">Full Name : Phung Dinh Xuan</div>
 							<div class="date-of-b">
 								Date of birth : 11/07/1998
 							</div>
 							<div class="gmail">
-								email : dinhxuan9807@gmail.com
+								Email : dinhxuan9807@gmail.com
 							</div>
 							
 						</div>
@@ -113,7 +113,7 @@
 							I'm a third-year student at the University of Engineering and Technology (Sub-University Of Vietnam National University). My major is System Information. You can view my transcript and GPA by clicking the button Download below.
 						</p>
 						<p>
-							I'm start studied web 11 months ago. Here is my first community joined at university <a href="https://uetcodecamp.org/about.html">UET CodeCamp 2018</a> .After that, I release I like make some app pretty, mode and useful for everyone. So now my goal is to become a Full-Stack web developer. solve their problems. So now my goal becomes a Full-Stack web developer.
+							I'm start studied web 11 months ago. Here is my first community joined at university <a href="https://uetcodecamp.org/about.html">UET CodeCamp 2018</a> .After that, I realized I really like making webs app. So now, My goal is to build full-stack websites and web applications using modern web technologies.
 						</p>
 						
 					</div>
@@ -180,32 +180,60 @@
 
 				<div class="wrap-portfolio">
 				<div class="row">
-					<div class="websites col-md-4 col-sm-4 col-xs-6">
-						<img src="imgs/detect-face.png" alt="">
-						<div class="overlay">
-							<a href="https://xuan-detect-face.herokuapp.com/" class="view-website">View website</a>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="websites">
+							<img src="imgs/detect-face.png" alt="">
+							<div class="overlay">
+								<a href="#ex1" rel="modal:open" class="view-website">View Details</a>
+							</div>
+							<div id="ex1" class="modal">
+							  <p>This app will detect face of any image using a Machine Learning API.It has a UI built with React, a RESTful Node/Express server and a PostgreSQL database. </p>
+							  <a href="https://xuan-detect-face.herokuapp.com/" class="live-web">Live Website</a>
+							</div>
+
 						</div>
 					</div>
 
-					<div class="websites col-md-4 col-sm-4 col-xs-6">
-						<img src="imgs/teambatchap.png" alt="">
-						<div class="overlay">
-							<a href="https://teambatchap.netlify.com/" class="view-website">View website</a>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="websites">
+							<img src="imgs/ezfood.png" alt="">
+							<div class="overlay">
+								<a href="#ex2" rel="modal:open"  class="view-website">View Details</a>
+							</div>
+
+							<div id="ex2" class="modal">
+							  <p>This app created to help restaurants easily management and sell your product.User can pick table, and dishs realtime.You can view source code I will public it soon ! It has a UI built with React, a RESTful Node/Express server and a Mongodb database.</p>
+							  <a href="https://github.com/Gou-opa/ezfood" class="live-web">View Source Code</a>
+							</div>
 
 						</div>
 					</div>
 
-					<div class="websites col-md-4 col-sm-4 col-xs-6">
-						<img src="imgs/todoapp.png" alt="">
-						<div class="overlay">
-							<a href="https://xuan-spider-todoapp.netlify.com/" class="view-website popup2_open">View website</a>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="websites">
+							<img src="imgs/teambatchap.png" alt="">
+							<div class="overlay">
+								<a href="#ex3" rel="modal:open"  class="view-website">View Details</a>
+							</div>
+
+							<div id="ex3" class="modal">
+							  <p>I made this app just for my closes friends to remember the birthday of each member in our group! And how many days since we create the group chat on facebook called 'Team bat chap'</p>
+							  <a href="https://teambatchap.netlify.com/" class="live-web">Live Website</a>
+							</div>
 						</div>
 					</div>
 
-					<div class="websites col-md-4 col-sm-4 col-xs-6">
-						<img src="imgs/teambatchap.png" alt="">
-						<div class="overlay">
-							<a href="https://xuan-spider-todoapp.netlify.com/" class="view-website">View website</a>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="websites">
+							<img src="imgs/todoapp2.png" alt="">
+							<div class="overlay">
+								<a href="#ex4" rel="modal:open" class="view-website">View Details</a>
+							</div>
+
+							<div id="ex4" class="modal">
+							  <p>This is the first app I made when I learn Reactjs. No server,just use localstorage to manager todo list!</p>
+							  <a href="https://flashxu98.netlify.com/" class="live-web">Live website</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -249,6 +277,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 	<script type="text/javascript" src="vendor/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script type="text/javascript" src="1.js"></script>
 </body>
 
